@@ -16,11 +16,11 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.find do |item| 
+  array.find do |item|
     i = 0
-    3.times do
+    while i < 3 do
       if item == cheese_types[i]
-        return item 
+        return item
       end
       i += 1
     end
